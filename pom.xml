@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.bmw.psbom</groupId>
-    <artifactId>kafka-producer</artifactId>
+    <artifactId>kafka-producer-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>kafka-producer</name>
     <description>kafka-producer</description>
