@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.bmw.psbom</groupId>
     <artifactId>kafka-producer-consumer</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1</version>
     <name>kafka-producer</name>
     <description>kafka-producer</description>
     <properties>

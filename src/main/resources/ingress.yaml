@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kafka-producer-consumer-ingress
+  namespace: kafka
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: kafka-producer-consumer.local
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/windchill/esi"
+            backend:
+              service:
+                name: kafka-producer-consumer-service
+                port:
+                  number: 8181

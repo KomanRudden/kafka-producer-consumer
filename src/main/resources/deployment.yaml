@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-producer-consumer
+  namespace: kafka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kafka-producer-consumer
+  template:
+    metadata:
+      labels:
+        app: kafka-producer-consumer
+    spec:
+      containers:
+        - name: kafka-producer-consumer
+          image: localhost:30000/kafka-producer-consumer
+          ports:
+            - containerPort: 8080
